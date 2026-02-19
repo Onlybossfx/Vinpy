@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinpy Hotels · Boutique Luxury Uyo</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- PhotoSwipe -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="#" class="logo">Vinpy<span>Hotels</span></a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#rooms">Suites</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER (LIVE BACKGROUND - NO CONTROLS) -->
+  <section id="home" class="hero">
+    <div class="swiper hero-swiper" id="heroSlider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hero-slide" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&auto=format');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1600&auto=format');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('https://images.unsplash.com/photo-1631049035636-b1201a3f6819?w=1600&auto=format');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=1600&auto=format');"></div>
+      </div>
+    </div>
+    
+    <div class="hero-content">
+      <span class="hero-sup" data-aos="fade-up">Vinpy Hotels · Uyo</span>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">Luxury & Comfort<br>in the Heart of Uyo</h1>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">A 4-star boutique sanctuary where Nigerian warmth meets contemporary elegance</p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+        <a href="#" class="btn btn-primary">Book Your Suite <i class="fas fa-arrow-right"></i></a>
+        <a href="#gallery" class="btn btn-outline">Explore Gallery</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="scroll-text">Discover</span>
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- WELCOME SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Welcome to</span>
+        <h2 class="section-title">Vinpy Hotels</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <p class="lead">A landmark of intimate luxury in Nigeria's vibrant capital of Akwa Ibom State.</p>
+          <p>Nestled in the prestigious Udo-Udoma Avenue, Vinpy Hotels offers a sanctuary for both business and leisure travelers. With only 24 meticulously designed suites, we provide personalized service in an atmosphere of understated elegance.</p>
+          <p>Discover why discerning travelers choose Vinpy for their stays in Uyo – where every detail whispers thoughtfulness, from the Egyptian cotton sheets to the curated Nigerian art adorning our walls.</p>
+        </div>
+        <div class="about-stats" data-aos="fade-left">
+          <div class="stat-item">
+            <div class="stat-number">24</div>
+            <div class="stat-label">Exclusive Suites</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4★</div>
+            <div class="stat-label">Boutique Rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">21km</div>
+            <div class="stat-label">From Airport</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Concierge</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS SLIDER (WITH CONTROLS) -->
+  <section id="rooms" class="section rooms-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Luxurious Accommodations</span>
+        <h2 class="section-title">Our Suites</h2>
+      </div>
+
+      <div class="swiper rooms-slider" id="roomsSlider">
+        <div class="swiper-wrapper">
+          <!-- Suite 1 -->
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1631049035636-b1201a3f6819?w=800&auto=format" alt="Presidential Suite">
+                <div class="room-category">Signature</div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Presidential Suite</h3>
+                <p class="room-desc">A sprawling sanctuary with separate living area, private terrace, and panoramic city views.</p>
+                <div class="room-amenities">
+                  <span>King Bed</span>
+                  <span>Private Terrace</span>
+                  <span>Rain Shower</span>
+                  <span>Smart TV</span>
+                  <span>Mini-Bar</span>
+                </div>
+                <div class="room-price">
+                  <span><span class="price-amount">₦350,000</span> <span class="price-period">/ night</span></span>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Suite 2 -->
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&auto=format" alt="Executive Suite">
+                <div class="room-category">Executive</div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Executive Suite</h3>
+                <p class="room-desc">Spacious suite with dedicated workspace, lounge area, and premium amenities for the business traveler.</p>
+                <div class="room-amenities">
+                  <span>King Bed</span>
+                  <span>Work Desk</span>
+                  <span>Rain Shower</span>
+                  <span>Nespresso</span>
+                  <span>Wi-Fi</span>
+                </div>
+                <div class="room-price">
+                  <span><span class="price-amount">₦220,000</span> <span class="price-period">/ night</span></span>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Suite 3 -->
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&auto=format" alt="Deluxe Room">
+                <div class="room-category">Deluxe</div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Deluxe Room</h3>
+                <p class="room-desc">Elegantly appointed room with modern amenities, perfect for both business and leisure travelers.</p>
+                <div class="room-amenities">
+                  <span>Queen Bed</span>
+                  <span>Rain Shower</span>
+                  <span>Smart TV</span>
+                  <span>Mini-Bar</span>
+                  <span>Wi-Fi</span>
+                </div>
+                <div class="room-price">
+                  <span><span class="price-amount">₦150,000</span> <span class="price-period">/ night</span></span>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Suite 4 -->
+          <div class="swiper-slide">
+            <div class="room-card">
+              <div class="room-image">
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&auto=format" alt="Superior Room">
+                <div class="room-category">Superior</div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-title">Superior Room</h3>
+                <p class="room-desc">Comfortable and well-appointed with contemporary design and essential amenities for a relaxing stay.</p>
+                <div class="room-amenities">
+                  <span>Queen Bed</span>
+                  <span>Rain Shower</span>
+                  <span>Smart TV</span>
+                  <span>Wi-Fi</span>
+                </div>
+                <div class="room-price">
+                  <span><span class="price-amount">₦120,000</span> <span class="price-period">/ night</span></span>
+                  <a href="#" class="btn btn-primary">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Rooms slider controls -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section id="amenities" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">World-Class Facilities</span>
+        <h2 class="section-title">Amenities</h2>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="amenity-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Restaurant & Bar</h3>
+          <p>Experience exquisite Nigerian and international cuisine at our signature restaurant, plus craft cocktails at the rooftop bar.</p>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="amenity-icon"><i class="fas fa-spa"></i></div>
+          <h3>Wellness Center</h3>
+          <p>Rejuvenate in our state-of-the-art fitness center, outdoor pool, and spa offering traditional Nigerian treatments.</p>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="amenity-icon"><i class="fas fa-wifi"></i></div>
+          <h3>High-Speed Wi-Fi</h3>
+          <p>Stay connected with complimentary fiber-optic internet throughout the property, perfect for business travelers.</p>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="amenity-icon"><i class="fas fa-square-parking"></i></div>
+          <h3>Secure Parking</h3>
+          <p>24/7 monitored parking with valet service and electric vehicle charging stations available.</p>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="amenity-icon"><i class="fas fa-clock"></i></div>
+          <h3>24/7 Concierge</h3>
+          <p>Our dedicated team is always available to assist with reservations, transportation, and local recommendations.</p>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="amenity-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Business Center</h3>
+          <p>Fully equipped business facilities with meeting rooms, printing services, and private workstations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Visual Journey</span>
+        <h2 class="section-title">Gallery</h2>
+      </div>
+    </div>
+
+    <div class="gallery-grid container">
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&auto=format" alt="Luxury Suite">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+        <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=600&auto=format" alt="Restaurant">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1631049035636-b1201a3f6819?w=600&auto=format" alt="Lobby">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=600&auto=format" alt="Rooftop">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733433?w=600&auto=format" alt="Bar">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&auto=format" alt="Suite">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&auto=format" alt="Bathroom">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&auto=format" alt="Pool">
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact & Location</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Vinpy Hotels</h3>
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>10, Udo-Udoma Avenue, Off Oron Road,<br>Uyo, Akwa Ibom State, Nigeria</p>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-phone-alt"></i>
+            <p>+234 813 477 9599<br>+234 901 387 4290</p>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <p>reservations@vinpyhotels.com<br>info@vinpyhotels.com</p>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-plane"></i>
+            <p>21–25 km from Akwa Ibom International Airport<br>Private transfers available on request</p>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-clock"></i>
+            <p>Open 24 hours, 7 days a week<br>Check-in: 2pm | Check-out: 11am</p>
+          </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <textarea rows="4" placeholder="Your Message / Booking Inquiry"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-holder" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.245312062115!2d7.9265436!3d5.0333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDInMDAuMCJOIDfCsDU1JzM1LjYiRQ!5e0!3m2!1sen!2sng!4v1710525000000!5m2!1sen!2sng" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Vinpy<span>Hotels</span></div>
+          <p>Boutique luxury in the heart of Uyo. Where Nigerian warmth meets international standards.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Suites</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Restaurant</a></li>
+            <li><a href="#">Spa & Wellness</a></li>
+            <li><a href="#">Airport Transfers</a></li>
+            <li><a href="#">Concierge</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li>10 Udo-Udoma Avenue</li>
+            <li>Uyo, Akwa Ibom State</li>
+            <li>+234 813 477 9599</li>
+            <li>info@vinpyhotels.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Vinpy Hotels. All rights reserved. Boutique luxury in Uyo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
